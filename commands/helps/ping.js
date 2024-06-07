@@ -6,7 +6,7 @@ module.exports = {
         .setName("ping")
         .setDescription("Retorna o ping do usúario"),
     async execute(interaction) {
-        await interaction.reply("Ping: 100")
+        await interaction.reply("Ping: ", interaction.ws.ping);
     }
 }
 
